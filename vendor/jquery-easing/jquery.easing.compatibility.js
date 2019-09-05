@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2007 George Smith
  * Licensed under the MIT License:
- *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.opensource.org/licenses/mit-license.html
  */
 
 (function($){

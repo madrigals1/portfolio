@@ -1,6 +1,7 @@
 <?php
   session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,6 +53,14 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
+          <?php
+            if($_SESSION['user_id'] == 1){
+              echo '
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/admin">Admin</a>
+              </li>';
+            }
+          ?>
         </ul>
       </div>
     </div>

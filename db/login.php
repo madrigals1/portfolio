@@ -13,6 +13,6 @@
         $_SESSION['user_id'] = $id;
         header("Location: /index.php");
     } else {
-        header("Location: /log/helper.php?error=loginerror");
+        header("Location: /log/helper.php?error=login_error");
     }
 ?>

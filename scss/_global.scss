@@ -1,98 +1,60 @@
-// Global styling for this template
-body {
-  overflow-x: hidden;
-  @include body-font;
+// Global component styles
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-p {
-  line-height: 1.75;
+body {
+  height: 100%;
 }
 
 a {
-  color: $primary;
-  &:hover {
-    color: darken($primary, 10%);
+  &:focus {
+    outline: none;
   }
 }
 
-.text-primary {
-  color: $primary !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  @include heading-font;
-}
-
-.page-section {
-  padding: 100px 0;
-  h2.section-heading {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  h3.section-subheading {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 75px;
-    text-transform: none;
-    @include serif-font;
-  }
-}
-@media(min-width:768px) {
-  section {
-    padding: 150px 0;
+// Main page wrapper
+#wrapper {
+  display: flex;
+  #content-wrapper {
+    background-color: $gray-100;
+    width: 100%;
+    overflow-x: hidden;
+    #content {
+      flex: 1 0 auto;
+    }
   }
 }
 
-// Button Styles
-.btn {
-  @include heading-font;
-  font-weight: 700;
+// Set container padding to match gutter width instead of default 15px
+.container,
+.container-fluid {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
 }
 
-.btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
-}
-
-.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  &:active,
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: $white;
+  background: fade-out($gray-800, .5);
+  line-height: 46px;
   &:focus,
   &:hover {
-    background-color: darken($primary, 7.5%) !important;
-    border-color: darken($primary, 7.5%) !important;
     color: white;
   }
-  &:active,
-  &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  &:hover {
+    background: $gray-800;
   }
-}
-
-// Highlight color customization
-::-moz-selection {
-  background: $primary;
-  text-shadow: none;
-}
-
-::selection {
-  background: $primary;
-  text-shadow: none;
-}
-
-img::selection {
-  background: transparent;
-}
-
-img::-moz-selection {
-  background: transparent;
+  i {
+    font-weight: 800;
+  }
 }

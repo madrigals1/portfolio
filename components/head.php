@@ -20,6 +20,8 @@ echo '
   <!-- Custom styles for this page -->
   <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
   <link href="/css/tables.css" rel="stylesheet">
+
+  <link id="bsdp-css" href="/components/datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
 </head>
 ';
 ?>
