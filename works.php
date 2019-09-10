@@ -10,7 +10,7 @@
 
 <?php
   include_once $_SERVER['DOCUMENT_ROOT']."/db/connect.php";
-  $title = "Achievements";
+  $title = "Work";
   include_once $_SERVER['DOCUMENT_ROOT']."/components/head.php";
 ?>
 
@@ -45,11 +45,11 @@
                 <?php
                     echo '<h5 class="m-0 font-weight-bold text-primary">'.$title.'</h5>';
                 ?>
-                <a href="#" data-toggle="modal" data-target="#addProjectModal" class="btn btn-success btn-icon-split">
+                <a href="#" data-toggle="modal" data-target="#addWorkModal" class="btn btn-success btn-icon-split">
                   <span class="icon text-white-50">
                     <i class="fa fa-plus"></i>
                   </span>
-                  <span class="text">Add Achievement</span>
+                  <span class="text">Add Work</span>
                 </a>
               </div>
               <div class="card-body">
@@ -58,26 +58,29 @@
                     <thead>
                       <tr>
                         <th>Name</th>
-                        <th>Short description</th>
+                        <th>Period</th>
+                        <th>Queue</th>
                       </tr>
                     </thead>
                     <tfoot>
                       <tr>
                         <th>Name</th>
-                        <th>Short description</th>
+                        <th>Period</th>
+                        <th>Queue</th>
                       </tr>
                     </tfoot>
                     <tbody>
                         <?php
-                            $result_projects = mysqli_query($con, "SELECT * FROM `achievement`");
-                            $projects = mysqli_fetch_all($result_projects, MYSQLI_BOTH);
-                            $num_rows = $result_projects->num_rows;
+                            $result_works = mysqli_query($con, "SELECT * FROM `works` ORDER BY `works`.`queue` ASC");
+                            $works = mysqli_fetch_all($result_works, MYSQLI_BOTH);
+                            $num_rows = $result_works->num_rows;
     
                             for($i = 0; $i < $num_rows; $i++){
-                                $project = $projects[$i];
-                                echo '<tr style="cursor: pointer;" onclick="goAchievement('.$project['id'].')">';
-                                echo '<td>'.$project['name'].'</td>';
-                                echo '<td>'.$project['short_desc'].'</td>';
+                                $work = $works[$i];
+                                echo '<tr style="cursor: pointer;" onclick="goWork('.$work['id'].')">';
+                                echo '<td>'.$work['name'].'</td>';
+                                echo '<td>'.$work['description'].'</td>';
+                                echo '<td>'.$work['queue'].'</td>';
                                 echo '</tr>';
                             }
                         ?>
@@ -92,36 +95,41 @@
       </div>
       <!-- End of Main Content -->
 
-      <div class="modal fade" id="addProjectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="addWorkModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
-          <form method="post" action="/db/addProject.php">
+          <form method="post" action="/db/addWork.php" enctype="multipart/form-data">
            <div class="modal-content">
              <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">Add new Project</h5>
+               <h5 class="modal-title" id="exampleModalLabel">Add new Work</h5>
                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                  <span aria-hidden="true">×</span>
                </button>
              </div>
              <div class="modal-body">
                <div class="form-group">
-                 <label for="name">Class Name</label>
-                 <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp"/>
+                 <label for="name">Name</label>
+                 <input type="text" class="form-control" id="name" name="name"/>
                </div>
                <div class="form-group">
-                 <label for="summary">Class Summary</label>
-                 <textarea class="form-control" id="summary" name="summary" rows="3"></textarea>
+                 <label for="period">Period</label>
+                 <input type="text" class="form-control" id="period" name="period"/>
                </div>
                <div class="form-group">
-                 <label for="color">Class Color</label>
-                 <select class="form-control" id="color" name="color">
-                   <option value="primary">Cyan</option>
-                   <option value="secondary">Gray</option>
-                   <option value="success">Green</option>
-                   <option value="danger">Red</option>
-                   <option value="warning">Yellow</option>
-                   <option value="info">Blue</option>
-                   <option value="dark">Black</option>
-                 </select>
+                 <label for="description">Description</label>
+                 <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+               </div>
+               <div class="form-group">
+                 <label for="queue">Queue</label>
+                 <input type="number" class="form-control" id="queue" name="queue"/>
+               </div>
+               <div class="input-group form-group">
+                 <div class="input-group-prepend">
+                    <span class="input-group-text" id="imageUpload">Picture</span>
+                 </div>
+                 <div class="custom-file">
+                   <input type="file" class="custom-file-input" id="picture" name="picture" accept="image/x-png,image/gif,image/jpeg">
+                   <label class="custom-file-label" for="picture">Picture</label>
+                 </div>
                </div>
              </div>
              <div class="modal-footer">
@@ -155,9 +163,14 @@
   <script src="/js/demo/datatables-demo.js"></script>
 
   <script type="text/javascript">
-  function goAchievement(id){
-    window.location.href = "/achievement.php?id=" + id;
+  function goWork(id){
+    window.location.href = "/work.php?id=" + id;
   }
+  $('#picture').on('change',function(){
+    var fileName = $(this).val();
+    var name = fileName.replace(/^.*[\\/]/, '');
+    $(this).next('.custom-file-label').html(name);
+  })
   </script>
 
 </body>

@@ -6,21 +6,11 @@
     require('connect.php');
 
     $id = $_GET['id'];
-    $name = $_POST['name'];
-    $short_desc = $_POST['short_desc'];
-    $date = $_POST['date'];
-    $lnf = $_POST['lnf'];
-    $play_link = $_POST['play_link'];
-    $github_link = $_POST['github_link'];
+    $long_desc = $_POST['long_desc'];
     
     $result_project = mysqli_query($con,"
         UPDATE `projects` SET
-            `name` = '$name',
-            `short_desc` = '$short_desc',
-            `date` = '$date',
-            `lnf` = '$lnf',
-            `play_link` = '$play_link',
-            `github_link` = '$github_link'
+            `long_desc` = '$long_desc'
         WHERE `id` = '$id'
         ;"
     );

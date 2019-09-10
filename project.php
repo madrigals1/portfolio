@@ -11,7 +11,7 @@
 <?php
   	include_once $_SERVER['DOCUMENT_ROOT']."/db/connect.php";
     $project_id = $_GET['id'];
-    $result_project = mysqli_query($con, "SELECT * FROM `projects` WHERE `id` = '$project_id'");
+	$result_project = mysqli_query($con, "SELECT * FROM `projects` WHERE `id` = '$project_id'");
     $project = $result_project->fetch_array(MYSQLI_BOTH);  
     $title = $project['name'];
 	include_once $_SERVER['DOCUMENT_ROOT']."/components/head.php";
@@ -73,9 +73,13 @@
 								<i class="ace-icon fa fa-envelope-o bigger-110"></i>
 								<span class="bigger-110">Edit Small Picture</span>
                             </a>
-                            <a href="#editLongDesc" data-toggle="modal" class="btn btn-sm btn-block btn-primary">
+                            <a href="#editLongDescModal" data-toggle="modal" class="btn btn-sm btn-block btn-primary">
 								<i class="ace-icon fa fa-envelope-o bigger-110"></i>
 								<span class="bigger-110">Edit Long Description</span>
+							</a>
+							<a href="#removeProjectModal" data-toggle="modal" class="btn btn-sm btn-block btn-danger">
+								<i class="ace-icon fa fa-envelope-o bigger-110"></i>
+								<span class="bigger-110">Remove Project</span>
                             </a>
                             ';
 							echo '
@@ -83,7 +87,7 @@
 
 						<div class="col-md-12 col-lg-9">
 							<h4 class="blue d-flex justify-content-between">
-								<span class="middle"><b>Project</b> - '.$project['name'].'</span>
+								<span class="middle">Project - <b>'.$project['name'].'</b></span>
 							</h4>
 
 								<div class="profile-user-info">
@@ -246,7 +250,7 @@
 							  <div class="modal-dialog" role="document">
 							    <div class="modal-content">
 							      <div class="modal-header">
-							        <h5 class="modal-title" id="exampleModalLabel">EditSmallPicture</h5>
+							        <h5 class="modal-title" id="exampleModalLabel">Edit Small Picture</h5>
 							        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
 							          <span aria-hidden="true">×</span>
 							        </button>
@@ -281,7 +285,7 @@
 							  </div>
 							</div>
 
-							<div class="modal fade" id="editLongDesc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal fade" id="editLongDescModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 							  <div class="modal-dialog" role="document">
 							    <div class="modal-content">
 							      <div class="modal-header">
@@ -303,6 +307,28 @@
 							      	  <button class="btn btn-primary" type="submit">Change</a>
 											</div>
 										</form>
+							    </div>
+							  </div>
+							</div>
+							
+							<div class="modal fade" id="removeProjectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							       <h5 class="modal-title" id="exampleModalLabel">Remove <b>', $project['name'], '</b></h5>
+							       <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+							         <span aria-hidden="true">×</span>
+							       </button>
+								  </div>
+								  <form method="post" action="/db/removeProject.php?id='.$project_id.'">
+								  	<div class="modal-body">
+								  		<h5 class="modal-title">Are you sure you want to remove this project?</h5>
+								  	</div>
+							      	<div class="modal-footer">
+							      		<button class="btn btn-secondary" type="button" data-dismiss="modal">Back</button>
+							      		<button class="btn btn-danger" type="submit">Remove</a>
+								  	</div>
+								  </form>
 							    </div>
 							  </div>
                             </div>

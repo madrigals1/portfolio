@@ -26,7 +26,7 @@
     if (move_uploaded_file($_FILES["big_pic"]["tmp_name"], $target_file_big) && move_uploaded_file($_FILES["small_pic"]["tmp_name"], $target_file_small)) {
         $file_uploaded = true;
     } else {
-        header("Location: /log/helper.php?error=class_image_upload_error");
+        header("Location: /log/helper.php?error=picture_upload_error");
     }
     
     $result_project = mysqli_query($con,"
@@ -60,6 +60,6 @@
     if($result_project){
         header("Location: /projects.php");
     } else {
-        header("Location: /log/helper.php?error=project_error");
+        header("Location: /log/helper.php?error=project_add_error");
     }
 ?>

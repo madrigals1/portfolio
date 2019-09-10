@@ -47,31 +47,31 @@
           </div>
         </li>';
 
-        if($href == "achievements.php"){
+        if($href == "works.php"){
           echo '<li class="nav-item active">';
         } else {
           echo '<li class="nav-item">';
         }
   
         echo '
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAchievements" aria-expanded="true" aria-controls="collapseTwo">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseWorks" aria-expanded="true" aria-controls="collapseTwo">
             <i class="fas fa-fw fa-graduation-cap"></i>
-            <span>Achievements</span>
+            <span>Works</span>
           </a>
         ';
   
-        if($href == "achievements.php"){
+        if($href == "works.php"){
           echo '
-            <div id="collapseAchievements" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">';
+            <div id="collapseWorks" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">';
         } else {
           echo '
-            <div id="collapseAchievements" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">';
+            <div id="collapseWorks" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">';
         }
         
             echo '
               <div class="bg-white py-2 collapse-inner rounded">
             
-                <a class="collapse-item active" href="/achievements.php">Achievements</a>
+                <a class="collapse-item active" href="/works.php">Works</a>
               </div>
             </div>
           </li>';
