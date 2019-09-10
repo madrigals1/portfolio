@@ -108,6 +108,10 @@
                  <input type="text" class="form-control" id="name" name="name"/>
                </div>
                <div class="form-group">
+                 <label for="alias">Alias</label>
+                 <input type="text" class="form-control" id="alias" name="alias"/>
+               </div>
+               <div class="form-group">
                  <label for="short_desc">Short description</label>
                  <textarea class="form-control" id="short_desc" name="short_desc" rows="2"></textarea>
                </div>

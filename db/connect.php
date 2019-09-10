@@ -1,4 +1,5 @@
 <?php
+
     $servername = "localhost";
     $username = "admin_portfolio";
     $password = "R;R€R€:Hdo+O";

@@ -88,7 +88,32 @@
         </div>
       </div>
       <div class="row">
+        <?php
+          include_once $_SERVER['DOCUMENT_ROOT']."/db/connect.php";
 
+          $result_projects = mysqli_query($con, "SELECT * FROM `projects`");
+          $projects = $result_projects->fetch_all(MYSQLI_BOTH);
+
+          for($i = 0; $i < count($projects); $i++){
+            $project = $projects[$i];
+            echo '
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#', $project['alias'],'">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/projects/', $project['small_pic'],'" alt="', $project['name'], '">
+              </a>
+              <div class="portfolio-caption">
+                <h4>', $project['name'], '</h4>
+                <p class="text-muted">'. $project['lnf'], '</p>
+              </div>
+            </div>
+            ';
+          }
+        ?>
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#maze">
             <div class="portfolio-hover">

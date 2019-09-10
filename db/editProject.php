@@ -7,6 +7,7 @@
 
     $id = $_GET['id'];
     $name = $_POST['name'];
+    $alias = preg_replace('/[^\w]/', '', $_POST['alias']);
     $short_desc = $_POST['short_desc'];
     $date = $_POST['date'];
     $lnf = $_POST['lnf'];
@@ -16,6 +17,7 @@
     $result_project = mysqli_query($con,"
         UPDATE `projects` SET
             `name` = '$name',
+            `alias` = '$alias',
             `short_desc` = '$short_desc',
             `date` = '$date',
             `lnf` = '$lnf',

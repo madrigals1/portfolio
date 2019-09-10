@@ -89,9 +89,17 @@
 							<h4 class="blue d-flex justify-content-between">
 								<span class="middle">Project - <b>'.$project['name'].'</b></span>
 							</h4>
+                              <div class="profile-user-info">
 
-								<div class="profile-user-info">
-									<div class="profile-info-row">
+								<div class="profile-info-row">
+									<div class="profile-info-name"> Alias </div>
+
+									<div class="profile-info-value">
+										<span>'.$project['alias'].'</span>
+									</div>
+								</div>
+
+								<div class="profile-info-row">
 									<div class="profile-info-name"> Date </div>
 
 									<div class="profile-info-value">
@@ -170,7 +178,12 @@
                                       <div class="form-group">
 								  	  	<label for="name">Name</label>
 								  	  	<input type="text" class="form-control" id="name" name="name" value="'.$project['name'].'">
-								  	  </div>
+									  </div>
+										
+									  <div class="form-group">
+									  	<label for="alias">Alias</label>
+									  	<input type="text" class="form-control" id="alias" name="alias" value="'.$project['alias'].'">
+									  </div>
 
 								  	  <div class="form-group">
 								  	  	<label for="date">Date</label>
