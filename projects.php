@@ -135,6 +135,10 @@
                  <label for="github_link">Github link</label>
                  <input type="text" class="form-control" id="github_link" name="github_link"/>
                </div>
+               <div class="form-group">
+                 <label for="visit_link">Visit link</label>
+                 <input type="text" class="form-control" id="visit_link" name="visit_link"/>
+               </div>
                <div class="input-group form-group">
                  <div class="input-group-prepend">
                     <span class="input-group-text" id="imageUpload">Big picture</span>

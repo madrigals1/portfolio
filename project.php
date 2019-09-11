@@ -129,6 +129,14 @@
 									<div class="profile-info-value">
                                         <span><a class="btn btn-link m-0 p-0" href="'.$project['github_link'].'">'.$project['github_link'].'</a></span>
 									</div>
+								</div>
+								
+								<div class="profile-info-row">
+									<div class="profile-info-name"> Visit link </div>
+
+									<div class="profile-info-value">
+                                        <span><a class="btn btn-link m-0 p-0" href="'.$project['visit_link'].'">'.$project['visit_link'].'</a></span>
+									</div>
                                 </div>
                                 
                                 <div class="profile-info-row">
@@ -203,6 +211,11 @@
 								  	  <div class="form-group">
 								  	  	<label for="github_link">Github link</label>
 								  	  	<input type="text" class="form-control" id="github_link" name="github_link" value="'.$project['github_link'].'">
+									  </div>
+									  
+									  <div class="form-group">
+								  	  	<label for="visit_link">Visit link</label>
+								  	  	<input type="text" class="form-control" id="visit_link" name="visit_link" value="'.$project['visit_link'].'">
                                       </div>
 
                                       <div class="form-group">

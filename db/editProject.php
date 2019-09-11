@@ -13,6 +13,7 @@
     $lnf = $_POST['lnf'];
     $play_link = $_POST['play_link'];
     $github_link = $_POST['github_link'];
+    $visit_link = $_POST['visit_link'];
     
     $result_project = mysqli_query($con,"
         UPDATE `projects` SET
@@ -22,7 +23,8 @@
             `date` = '$date',
             `lnf` = '$lnf',
             `play_link` = '$play_link',
-            `github_link` = '$github_link'
+            `github_link` = '$github_link',
+            `visit_link` = '$visit_link'
         WHERE `id` = '$id'
         ;"
     );

@@ -14,6 +14,7 @@
     $lnf = $_POST['lnf'];
     $play_link = $_POST['play_link'];
     $github_link = $_POST['github_link'];
+    $visit_link = $_POST['visit_link'];
 
     $target_dir = "../img/projects/";
 
@@ -55,6 +56,7 @@
             `lnf`,
             `play_link`,
             `github_link`,
+            `visit_link`,
             `big_pic`,
             `small_pic`
         )
@@ -68,6 +70,7 @@
             '$lnf',
             '$play_link',
             '$github_link',
+            '$visit_link',
             '$filename_big',
             '$filename_small'
         );"

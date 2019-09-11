@@ -276,20 +276,29 @@
                       <li>Language and Frameworks: ', $project['lnf'], '</li>
                     </ul>
                     ';
-                    if($project['github_link']){
-                      echo '
-                      <button class="btn btn-primary"
-                        onclick="window.location.href=\'', $project['github_link'], '\';" type="button">
-                        <i class="fab fa-github"></i>
-                        Show on Github
-                      </button>
-                      ';
-                    }
                     if($project['play_link']){
                       echo '
                       <button class="btn btn-primary" onclick="window.location.href=\'', $project['play_link'], '\';" type="button">
                         <i class="fa fa-gamepad"></i>
                         Play
+                      </button>
+                      ';
+                    }
+                    if($project['visit_link']){
+                      echo '
+                      <button class="btn btn-primary"
+                        onclick="window.location.href=\'', $project['visit_link'], '\';" type="button">
+                        <i class="fa fa-globe"></i>
+                        Visit
+                      </button>
+                      ';
+                    }
+                    if($project['github_link']){
+                      echo '
+                      <button class="btn btn-primary"
+                        onclick="window.location.href=\'', $project['github_link'], '\';" type="button">
+                        <i class="fab fa-github"></i>
+                        GitHub
                       </button>
                       ';
                     }
