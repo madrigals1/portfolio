@@ -1,6 +1,6 @@
 <?php
 
-    $servername = "localhost";
+    $servername = "shareddb-n.hosting.stackcp.net";
     $username = "admin_portfolio";
     $password = "R;R€R€:Hdo+O";
     $dbname = "portfolio-313137c4ba";
