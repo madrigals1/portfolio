@@ -4,6 +4,7 @@
         header("Location: /admin");
     }
     require('connect.php');
+    require_once('resizeImageClass.php');
 
     $name = $_POST['name'];
     $period = $_POST['period'];
@@ -12,14 +13,19 @@
 
     $target_dir = "../img/works/";
 
-    $temp = explode(".", $_FILES["picture"]["name"]);
-    $filename = round(microtime(true)) . '-work.' . end($temp);
-    $target_file  = $target_dir . $filename;
-    
-    if (move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file)) {
-        $file_uploaded = true;
-    } else {
-        header("Location: /log/helper.php?error=picture_upload_error");
+    if($_FILES["picture"]["name"]) {
+        $temp = explode(".", $_FILES["picture"]["name"]);
+        $filename = round(microtime(true)) . '-work.' . end($temp);
+        $target_file = $target_dir . $filename;
+
+        if (move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file)) {
+            $file_uploaded = true;
+            $resize = new ResizeImage($target_file);
+            $resize->resizeTo(200, 200, "exact");
+            $resize->saveImage($target_file);
+        } else {
+            header("Location: /log/helper.php?error=picture_upload_error");
+        }
     }
     
     $result_work = mysqli_query($con,"
