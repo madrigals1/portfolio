@@ -14,6 +14,9 @@
     
     if (move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file)) {
         $file_uploaded = true;
+        $resize = new ResizeImage($target_file);
+        $resize->resizeTo(200, 200, "exact");
+        $resize->saveImage($target_file);
     } else {
         header("Location: /log/helper.php?error=picture_upload_error");
     }
