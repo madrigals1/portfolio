@@ -4,6 +4,7 @@
         header("Location: /admin");
     }
     require('connect.php');
+    require_once('resizeImageClass.php');
     
     $id = $_GET['id'];
 
