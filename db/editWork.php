@@ -8,14 +8,12 @@
     $id = $_GET['id'];
     $name = $_POST['name'];
     $period = $_POST['period'];
-    $description = $_POST['description'];
     $queue = $_POST['queue'];
     
     $result_work = mysqli_query($con,"
         UPDATE `works` SET
             `name` = '$name',
             `period` = '$period',
-            `description` = '$description',
             `queue` = '$queue'
         WHERE `id` = '$id'
         ;"
