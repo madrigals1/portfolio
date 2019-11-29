@@ -4,6 +4,11 @@ My portfolio website
 
 > Works in **PHP7** + **Apache 2.4** + **MariaDB-10.3**
 
+## Navigation
+* [Website User Interface][wui]
+* [Admin Interface][ai]
+
+[wui]
 ## Website user interface
 
 ### Main Page
@@ -22,6 +27,7 @@ My portfolio website
 
 ![Journey](/img/git/journey.png?raw=true "Journey")
 
+[ai]
 ## Admin interface
 
 ### Admin 
