@@ -42,5 +42,8 @@ My portfolio website
 1) Install PHP-based web server solution, e.g. **LAMP, XAMPP, OpenServer**.
 2) Clone this repository to the folder, where web server hosts websites.
 3) Open **phpmyadmin** and add database named **portfolio**
-4) Import **database.sql**
+4) Import **database.sql**  
 
+> To open **Admin Panel** go to **<website_address>/admin**,  
+Login: admin  
+Password: 159753
