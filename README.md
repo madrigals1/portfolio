@@ -6,19 +6,35 @@ My portfolio website
 
 ## Website user interface
 
-### 1) Main Page
+### Main Page
 
 ![Main Page](/img/git/mainpage.png?raw=true "Main Page")
 
-### 2) Projects
+### Projects
 
 ![Projects](/img/git/projects.png?raw=true "Projects")
 
-### 3) Project View
+### Project View
 
 ![Project View](/img/git/projectfront.png?raw=true "Project View")
 
-### 4) Journey
+### Journey
 
 ![Journey](/img/git/journey.png?raw=true "Journey")
+
+## Admin interface
+
+### Admin 
+
+![Admin](/img/git/admin.png?raw=true "Admin")
+
+### Admin Project Page
+
+![Admin Project Page](/img/git/projectpage.png?raw=true "Admin Project Page")
+
+### Admin Journey Page
+
+![Admin Journey Page](/img/git/journeypage.png?raw=true "Admin Journey Page")
+
+
 
