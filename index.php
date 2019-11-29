@@ -228,7 +228,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Adi S. Portfolio 2019</span>
+          <span class="copyright">Adi S. Portfolio 2019</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">

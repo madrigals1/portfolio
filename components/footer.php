@@ -4,7 +4,7 @@ echo '
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>&copy; Grades 2019</span>
+            <span>Adi S. Portfolio 2019</span>
           </div>
         </div>
       </footer>
