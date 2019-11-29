@@ -37,4 +37,10 @@ My portfolio website
 ![Admin Journey Page](/img/git/journeypage.png?raw=true "Admin Journey Page")
 
 
+## Installation
+
+1) Install PHP-based web server solution, e.g. **LAMP, XAMPP, OpenServer**.
+2) Clone this repository to the folder, where web server hosts websites.
+3) Open **phpmyadmin** and add database named **portfolio**
+4) Import **database.sql**
 
