@@ -5,8 +5,8 @@ My portfolio website
 > Works in **PHP7** + **Apache 2.4** + **MariaDB-10.3**
 
 ## Navigation
-* [Website User Interface][wui]
-* [Admin Interface][ai]
+* ![Website User Interface][wui]
+* ![Admin Interface][ai]
 
 [wui]
 ## Website user interface
