@@ -4,12 +4,14 @@
         header("Location: /admin");
     }
     require('connect.php');
+    require('../utils/functions.php');
     
     $id = $_GET['id'];
 
     $folder = "/portfolio/img/projects";
-    $target_dir = getenv("STATIC_FILE_HOSTING") + $folder;
-    $url = getenv("STATIC_FILE_HOSTING_URL") + $folder;
+    $res = get_static_path($folder);
+    $target_dir = $res[0];
+    $url = $res[1];
 
     $temp = explode(".", $_FILES["big_pic"]["name"]);
     $filename = round(microtime(true)) . '-big.' . end($temp);

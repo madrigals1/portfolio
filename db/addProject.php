@@ -4,7 +4,8 @@
         header("Location: /admin");
     }
     require('connect.php');
-    require_once('resizeImageClass.php');
+    require('../utils/imageResizer.php');
+    require('../utils/functions.php');
 
     $name = $_POST['name'];
     $alias = preg_replace('/[^\w]/', '', $_POST['alias']);
@@ -17,8 +18,9 @@
     $visit_link = $_POST['visit_link'];
 
     $folder = "/portfolio/img/projects";
-    $target_dir = getenv("STATIC_FILE_HOSTING") + $folder;
-    $url = getenv("STATIC_FILE_HOSTING_URL") + $folder;
+    $res = get_static_path($folder);
+    $target_dir = $res[0];
+    $url = $res[1];
 
     if($_FILES["big_pic"]["tmp_name"]){
         $temp_big = explode(".", $_FILES["big_pic"]["name"]);
