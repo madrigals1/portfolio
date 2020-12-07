@@ -182,11 +182,11 @@
   ?>
 
   <!-- Page level plugins -->
-  <script src="/vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="https://static.adigame.dev/portfolio/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="https://static.adigame.dev/portfolio/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="/vendor/js/demo/datatables-demo.js"></script>
+  <script src="https://static.adigame.dev/portfolio/vendor/js/demo/datatables-demo.js"></script>
 
   <script type="text/javascript">
   $('#small_pic').on('change',function(){
