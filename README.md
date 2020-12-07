@@ -8,33 +8,33 @@ My portfolio website
 
 ### Main Page
 
-![Main Page](/img/git/mainpage.png?raw=true "Main Page")
+![Main Page](https://i.imgur.com/xcBDECT.png?raw=true "Main Page")
 
 ### Projects
 
-![Projects](/img/git/projects.png?raw=true "Projects")
+![Projects](https://i.imgur.com/bamPJzU.png?raw=true "Projects")
 
 ### Project View
 
-![Project View](/img/git/projectfront.png?raw=true "Project View")
+![Project View](https://i.imgur.com/vq5E7CL.png?raw=true "Project View")
 
 ### Journey
 
-![Journey](/img/git/journey.png?raw=true "Journey")
+![Journey](https://i.imgur.com/b9WKUJ0.png?raw=true "Journey")
 
 ## Admin interface
 
 ### Admin 
 
-![Admin](/img/git/admin.png?raw=true "Admin")
+![Admin](https://i.imgur.com/iNJut2k.png?raw=true "Admin")
 
 ### Admin Project Page
 
-![Admin Project Page](/img/git/projectpage.png?raw=true "Admin Project Page")
+![Admin Project Page](https://i.imgur.com/7XHQ4bg.png?raw=true "Admin Project Page")
 
 ### Admin Journey Page
 
-![Admin Journey Page](/img/git/journeypage.png?raw=true "Admin Journey Page")
+![Admin Journey Page](https://i.imgur.com/AHt3Bw9.png?raw=true "Admin Journey Page")
 
 
 ## Installation
