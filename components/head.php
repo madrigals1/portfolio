@@ -20,8 +20,6 @@ echo '
   <!-- Custom styles for this page -->
   <link href="https://static.adigame.dev/portfolio/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
   <link href="https://static.adigame.dev/portfolio/vendor/css/tables.css" rel="stylesheet">
-
-  <link id="bsdp-css" href="/components/datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
 </head>
 ';
 ?>
