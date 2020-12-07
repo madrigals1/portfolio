@@ -7,10 +7,14 @@
     
     $id = $_GET['id'];
 
-    $target_dir = "../img/projects/";
+    $folder = "/portfolio/img/projects";
+    $target_dir = getenv("STATIC_FILE_HOSTING") + $folder;
+    $url = getenv("STATIC_FILE_HOSTING_URL") + $folder;
+
     $temp = explode(".", $_FILES["big_pic"]["name"]);
     $filename = round(microtime(true)) . '-big.' . end($temp);
     $target_file = $target_dir . $filename;
+    $url_file = $url . $filename;
     
     if (move_uploaded_file($_FILES["big_pic"]["tmp_name"], $target_file)) {
         $file_uploaded = true;
@@ -20,7 +24,7 @@
 
     $result = mysqli_query($con, "
         UPDATE `projects`
-        SET `big_pic` = '$filename'
+        SET `big_pic` = '$url_file'
         WHERE `id` = '$id'
     ;");
     

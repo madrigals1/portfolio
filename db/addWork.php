@@ -11,12 +11,15 @@
     $description = $_POST['description'];
     $queue = $_POST['queue'];
 
-    $target_dir = "../img/works/";
+    $folder = "/portfolio/img/works";
+    $target_dir = getenv("STATIC_FILE_HOSTING") + $folder;
+    $url = getenv("STATIC_FILE_HOSTING_URL") + $folder;
 
     if($_FILES["picture"]["name"]) {
         $temp = explode(".", $_FILES["picture"]["name"]);
         $filename = round(microtime(true)) . '-work.' . end($temp);
         $target_file = $target_dir . $filename;
+        $url_file = $url . $filename;
 
         if (move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file)) {
             $file_uploaded = true;
@@ -43,7 +46,7 @@
             '$period',
             '$description',
             '$queue',
-            '$filename'
+            '$url_file'
         );"
     );
     

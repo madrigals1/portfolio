@@ -16,12 +16,15 @@
     $github_link = $_POST['github_link'];
     $visit_link = $_POST['visit_link'];
 
-    $target_dir = "../img/projects/";
+    $folder = "/portfolio/img/projects";
+    $target_dir = getenv("STATIC_FILE_HOSTING") + $folder;
+    $url = getenv("STATIC_FILE_HOSTING_URL") + $folder;
 
     if($_FILES["big_pic"]["tmp_name"]){
         $temp_big = explode(".", $_FILES["big_pic"]["name"]);
         $filename_big = round(microtime(true)) . '-big.' . end($temp_big);
         $target_file_big  = $target_dir . $filename_big;
+        $url_big = $url . $filename_big;
 
         if (move_uploaded_file($_FILES["big_pic"]["tmp_name"], $target_file_big)) {
             $file_uploaded_big = true;
@@ -34,6 +37,7 @@
         $temp_small = explode(".", $_FILES["small_pic"]["name"]);
         $filename_small = round(microtime(true)) . '-small.' . end($temp_small);
         $target_file_small = $target_dir . $filename_small;
+        $url_small = $url . $filename_small;
     
         if(move_uploaded_file($_FILES["small_pic"]["tmp_name"], $target_file_small)){
             $file_uploaded_small = true;
@@ -71,8 +75,8 @@
             '$play_link',
             '$github_link',
             '$visit_link',
-            '$filename_big',
-            '$filename_small'
+            '$url_big',
+            '$url_small'
         );"
     );
     

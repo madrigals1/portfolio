@@ -49,7 +49,7 @@
                                 <img class="editable img-responsive" 
                                     style="width: auto; height: auto; max-width: 100%; max-height: 100%;" 
                                     alt="Avatar" id="avatar2" 
-                                    src="/img/works/'.$work['picture'].'">
+                                    src="'.$work['picture'].'">
 							</span>
 							<div class="space space-4"></div>
 							<br/>
@@ -170,7 +170,7 @@
                                                 <img class="editable rounded border img-responsive" 
                                                     style="width: auto; height: auto; max-width: 100%; max-height: 100%;" 
                                                     alt="Avatar" id="avatar2" 
-                                                    src="/img/works/'.$work['picture'].'">
+                                                    src="'.$work['picture'].'">
 
                                                 <div class="m-3"></div>
 

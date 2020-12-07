@@ -55,8 +55,8 @@ VALUES
   'Test Play Link',
   'Test Github Link',
   'Test Visit Link',
-  '1575052073-big.png',
-  '1575052073-small.png'
+  'https://static.adigame.dev/portfolio/img/projects/1575052073-big.png',
+  'https://static.adigame.dev/portfolio/img/projects/1575052073-small.png'
 ),
 (
   2,
@@ -69,8 +69,8 @@ VALUES
   'asdasd',
   'asdasd',
   'asdasd',
-  '1575052150-big.png',
-  '1575052150-small.png'
+  'https://static.adigame.dev/portfolio/img/projects/1575052150-big.png',
+  'https://static.adigame.dev/portfolio/img/projects/1575052150-small.png'
 );
 
 
@@ -119,7 +119,7 @@ INSERT INTO `works` (
   'APR 2018 - JUN 2019',
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   1,
-  '1575052217-work.png'
+  'https://static.adigame.dev/portfolio/img/projects/1575052217-work.png'
 ),
 (
   2,
@@ -127,7 +127,7 @@ INSERT INTO `works` (
   'JUN 2019 - AUG 2019',
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   2,
-  '1575052395-work.png'
+  'https://static.adigame.dev/portfolio/img/projects/1575052395-work.png'
 );
 
 -- Indexes

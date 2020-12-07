@@ -49,7 +49,7 @@
                                 <img class="editable img-responsive" 
                                     style="width: auto; height: auto; max-width: 100%; max-height: 100%;" 
                                     alt="Avatar" id="avatar2" 
-                                    src="/img/projects/'.$project['big_pic'].'">
+                                    src="'.$project['big_pic'].'">
                             </span>
                             <div class="space space-4"></div>
                             <span class="profile-picture">
@@ -57,7 +57,7 @@
                                 <img class="editable img-responsive" 
                                     style="width: auto; height: auto; max-width: 100%; max-height: 100%;" 
                                     alt="Avatar" id="avatar2" 
-                                    src="/img/projects/'.$project['small_pic'].'">
+                                    src="'.$project['small_pic'].'">
 							</span>
 							<div class="space space-4"></div>
 							<br/>
@@ -248,7 +248,7 @@
                                                 <img class="editable rounded border img-responsive" 
                                                     style="width: auto; height: auto; max-width: 100%; max-height: 100%;" 
                                                     alt="Avatar" id="avatar2" 
-                                                    src="/img/projects/'.$project['big_pic'].'">
+                                                    src="'.$project['big_pic'].'">
 
                                                 <div class="m-3"></div>
 
@@ -287,7 +287,7 @@
                                             <img class="editable rounded border img-responsive" 
                                                 style="width: auto; height: auto; max-width: 100%; max-height: 100%;" 
                                                 alt="Avatar" id="avatar2" 
-                                                src="/img/projects/'.$project['small_pic'].'">
+                                                src="'.$project['small_pic'].'">
 
                                                 <div class="m-3"></div>
 

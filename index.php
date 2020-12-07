@@ -104,7 +104,7 @@
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img class="img-fluid" src="img/projects/', $project['small_pic'],'" alt="', $project['name'], '">
+                <img class="img-fluid" src="', $project['small_pic'], '" alt="', $project['name'], '">
               </a>
               <div class="portfolio-caption">
                 <h4>', $project['name'], '</h4>
@@ -145,7 +145,7 @@
                 echo '
                 <li class="', $class, '">
                   <div class="timeline-image">
-                    <img class="rounded-circle img-fluid" src="img/works/', $work['picture'],'" alt="">
+                    <img class="rounded-circle img-fluid" src="', $work['picture'],'" alt="">
                   </div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -269,7 +269,7 @@
                     <!-- Project Details Go Here -->
                     <h2 class="text-uppercase">', $project['name'], '</h2>
                     <p class="item-intro text-muted">', $project['short_desc'], '</p>
-                    <img class="img-fluid d-block mx-auto" src="img/projects/', $project['big_pic'], '" alt="">
+                    <img class="img-fluid d-block mx-auto" src="', $project['big_pic'], '" alt="">
                     <p>', $project['long_desc'], '</p>
                     <ul class="list-inline">
                       <li>Date: ', $project['date'], '</li>
