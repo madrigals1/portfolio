@@ -15,7 +15,7 @@
     $work = $result_work->fetch_array(MYSQLI_BOTH);  
     $title = $work['name'];
 	include_once $_SERVER['DOCUMENT_ROOT']."/components/head.php";
-	echo '<link rel="stylesheet" href="/css/profile.css">';
+	echo '<link rel="stylesheet" href="vendor/css/profile.css">';
 ?>
 
 <body id="page-top">
