@@ -45,5 +45,7 @@ My portfolio website
 4) Import **database.sql**  
 
 > To open **Admin Panel** go to **<website_address>/admin**,  
-Login: admin  
-Password: 159753
+> Login: admin  
+> Password: admin
+>
+> P.S. Don't forget to change admin password using Database manager 

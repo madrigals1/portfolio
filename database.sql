@@ -43,7 +43,8 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `users` (`id`, `login`, `password`) VALUES
-(1, 'admin', '5583413443164b56500def9a533c7c70');
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3');
+-- md5("admin") = 21232f297a57a5a743894a0e4a801fc3
 
 -- Works table
 
