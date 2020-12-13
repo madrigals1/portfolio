@@ -1,0 +1,211 @@
+{
+    "dump": {
+        "initial": "SET SQL_MODE = \"NO_AUTO_VALUE_ON_ZERO\";\nSET AUTOCOMMIT = 0;\nSTART TRANSACTION;\nSET time_zone = \"+00: 00\";",
+        "db_name": "portfolio",
+        "tables": {
+            "projects": {
+                "fields": {
+                    "id": {
+                        "type": "int(11)",
+                        "null": false
+                    },
+                    "name": {
+                        "type": "varchar(512)",
+                        "null": false
+                    },
+                    "alias": {
+                        "type": "varchar(128)",
+                        "null": false
+                    },
+                    "short_desc": {
+                        "type": "text",
+                        "null": false
+                    },
+                    "long_desc": {
+                        "type": "text",
+                        "null": false
+                    },
+                    "date": {
+                        "type": "varchar(128)",
+                        "null": false
+                    },
+                    "lnf": {
+                        "type": "varchar(256)",
+                        "null": false
+                    },
+                    "play_link": {
+                        "type": "varchar(256)",
+                        "null": false
+                    },
+                    "github_link": {
+                        "type": "varchar(256)",
+                        "null": false
+                    },
+                    "visit_link": {
+                        "type": "varchar(256)",
+                        "null": false
+                    },
+                    "big_pic": {
+                        "type": "varchar(256)",
+                        "null": false
+                    },
+                    "small_pic": {
+                        "type": "varchar(256)",
+                        "null": false
+                    }
+                },
+                "ENGINE": "InnoDB",
+                "type": "Default",
+                "CHARSET": "utf8"
+            },
+            "users": {
+                "fields": {
+                    "id": {
+                        "type": "int(11)",
+                        "null": false
+                    },
+                    "login": {
+                        "type": "varchar(512)",
+                        "null": false
+                    },
+                    "password": {
+                        "type": "varchar(512)",
+                        "null": false
+                    }
+                },
+                "ENGINE": "InnoDB",
+                "type": "Default",
+                "CHARSET": "utf8"
+            },
+            "works": {
+                "fields": {
+                    "id": {
+                        "type": "int(11)",
+                        "null": false
+                    },
+                    "name": {
+                        "type": "varchar(512)",
+                        "null": false
+                    },
+                    "period": {
+                        "type": "varchar(256)",
+                        "null": false
+                    },
+                    "description": {
+                        "type": "text",
+                        "null": false
+                    },
+                    "queue": {
+                        "type": "int(3)",
+                        "null": false
+                    },
+                    "picture": {
+                        "type": "varchar(256)",
+                        "null": false
+                    }
+                },
+                "ENGINE": "InnoDB",
+                "type": "Default",
+                "CHARSET": "utf8"
+            }
+        },
+        "indexes": [
+            {
+                "table_name": "projects",
+                "primary_key": "id"
+            },
+            {
+                "table_name": "users",
+                "primary_key": "id"
+            },
+            {
+                "table_name": "works",
+                "primary_key": "id"
+            }
+        ],
+        "auto_increment": [
+            {
+                "table_name": "projects",
+                "field_name": "id",
+                "modification": "int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;"
+            },
+            {
+                "table_name": "users",
+                "field_name": "id",
+                "modification": "int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;"
+            },
+            {
+                "table_name": "works",
+                "field_name": "id",
+                "modification": "int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;"
+            }
+        ],
+        "population": [
+            {
+                "table_name": "projects",
+                "values": {
+                    "id": 1,
+                    "name": "Testing Project",
+                    "alias": "TestingAlias",
+                    "short_desc": "Testing short_desc",
+                    "long_desc": "Testing long_desc",
+                    "date": "April 2019",
+                    "lnf": "Test LNF",
+                    "play_link": "Test Play Link",
+                    "github_link": "Test Github Link",
+                    "visit_link": "Test Visit Link",
+                    "big_pic": "https://static.adigame.dev/portfolio/img/projects/1575052073-big.png",
+                    "small_pic": "https://static.adigame.dev/portfolio/img/projects/1575052073-small.png"
+                }
+            },
+            {
+                "table_name": "projects",
+                "values": {
+                    "id": 2,
+                    "name": "Testing Project 2",
+                    "alias": "TestingAlias 2",
+                    "short_desc": "Testing short_desc 2",
+                    "long_desc": "Testing long_desc 2",
+                    "date": "June 2019",
+                    "lnf": "Test LNF 2",
+                    "play_link": "Test Play Link 2",
+                    "github_link": "Test Github Link 2",
+                    "visit_link": "Test Visit Link 2",
+                    "big_pic": "https://static.adigame.dev/portfolio/img/projects/1575052150-big.png",
+                    "small_pic": "https://static.adigame.dev/portfolio/img/projects/1575052150-small.png"
+                }
+            },
+            {
+                "table_name": "works",
+                "values": {
+                    "id": 1,
+                    "name": "Test Journey",
+                    "period": "APR 2018 - JUN 2019",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "queue": 1,
+                    "picture": "https://static.adigame.dev/portfolio/img/projects/1575052217-work.png"
+                }
+            },
+            {
+                "table_name": "works",
+                "values": {
+                    "id": 2,
+                    "name": "Test Journey 2",
+                    "period": "JUN 2019 - AUG 2019",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "queue": 2,
+                    "picture": "https://static.adigame.dev/portfolio/img/projects/1575052217-work.png"
+                }
+            },
+            {
+                "table_name": "users",
+                "values": {
+                    "id": 1,
+                    "login": "admin",
+                    "password": "21232f297a57a5a743894a0e4a801fc3"
+                }
+            }
+        ]
+    },
+    "dynamic": {}
+}
