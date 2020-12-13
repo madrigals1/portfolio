@@ -1,5 +1,5 @@
 <?php
-    require('../utils/functions.php');
+    require('utils/functions.php');
 
     # Get JSON data
     $json_path = "/../data.json";
