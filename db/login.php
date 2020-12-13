@@ -11,7 +11,7 @@
 
     if($result->num_rows == 1){
         $_SESSION['user_id'] = $id;
-        header("Location: /index.php");
+        header("Location: /admin");
     } else {
         header("Location: /log/helper.php?error=login_error");
     }
