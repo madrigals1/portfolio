@@ -236,6 +236,16 @@
                 "name": "github",
                 "link": "https://www.github.com/test",
                 "fa_classes": "fab fa-github"
+            },
+            {
+                "name": "gmail",
+                "link": "mailto:sabyrbayev.adi32@gmail.com",
+                "fa_classes": "fab fa-google"
+            },
+            {
+                "name": "telegram",
+                "link": "https://t.me/madrigals1",
+                "fa_classes": "fab fa-telegram"
             }
         ]
     }
