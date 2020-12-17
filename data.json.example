@@ -163,7 +163,7 @@
                 "values": {
                     "id": 2,
                     "name": "Testing Project 2",
-                    "alias": "TestingAlias 2",
+                    "alias": "TestingAlias2",
                     "short_desc": "Testing short_desc 2",
                     "long_desc": "Testing long_desc 2",
                     "date": "June 2019",
