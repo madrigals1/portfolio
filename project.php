@@ -199,7 +199,7 @@
 								  	  </div>
 
 								  	  <div class="form-group">
-								  	  	<label forlnf">Languages & Frameworks</label>
+								  	  	<label for="lnf">Languages & Frameworks</label>
 								  	  	<input type="text" class="form-control" id="lnf" name="lnf" value="'.$project['lnf'].'">
 								  	  </div>
 
