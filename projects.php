@@ -119,6 +119,12 @@
                  <label for="long_desc">Long description</label>
                  <textarea class="form-control" id="long_desc" name="long_desc" rows="4"></textarea>
                </div>
+               <div class="form-check">
+                 <input class="form-check-input" checked type="checkbox" value="Yes" id="is_visible" name="is_visible">
+                 <label class="form-check-label" for="is_visible">
+                   Is visible on main page
+                 </label>
+               </div>
                <div class="form-group">
                  <label for="date">Date</label>
                  <input type="text" class="form-control" id="date" name="date"/>

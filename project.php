@@ -166,7 +166,9 @@
 						    			Long description about the project.
 						    		</div>
 						    		';
-						    	}
+								}
+								
+								$checked = $project['is_visible'] == 1 ? "checked" : "";
 
 						    	echo '
 						    </div>
@@ -186,6 +188,13 @@
                                       <div class="form-group">
 								  	  	<label for="name">Name</label>
 								  	  	<input type="text" class="form-control" id="name" name="name" value="'.$project['name'].'">
+									  </div>
+
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" value="Yes" name="is_visible" '.$checked.' id="is_visible">
+										<label class="form-check-label" for="is_visible">
+										  Is visible on main page
+										</label>
 									  </div>
 										
 									  <div class="form-group">

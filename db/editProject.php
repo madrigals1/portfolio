@@ -9,6 +9,7 @@
     $name = $_POST['name'];
     $alias = preg_replace('/[^\w]/', '', $_POST['alias']);
     $short_desc = $_POST['short_desc'];
+    $is_visible = $_POST['is_visible'] == "Yes" ? 1 : 0;
     $date = $_POST['date'];
     $lnf = $_POST['lnf'];
     $play_link = $_POST['play_link'];
@@ -20,6 +21,7 @@
             `name` = '$name',
             `alias` = '$alias',
             `short_desc` = '$short_desc',
+            `is_visible` = '$is_visible',
             `date` = '$date',
             `lnf` = '$lnf',
             `play_link` = '$play_link',

@@ -25,6 +25,10 @@
                         "type": "text",
                         "null": false
                     },
+                    "is_visible": {
+                        "type": "tinyint(1)",
+                        "null": false
+                    },
                     "date": {
                         "type": "varchar(128)",
                         "null": false
@@ -149,6 +153,7 @@
                     "alias": "TestingAlias",
                     "short_desc": "Testing short_desc",
                     "long_desc": "Testing long_desc",
+                    "is_visible": 1,
                     "date": "April 2019",
                     "lnf": "Test LNF",
                     "play_link": "Test Play Link",
@@ -166,6 +171,7 @@
                     "alias": "TestingAlias2",
                     "short_desc": "Testing short_desc 2",
                     "long_desc": "Testing long_desc 2",
+                    "is_visible": 1,
                     "date": "June 2019",
                     "lnf": "Test LNF 2",
                     "play_link": "Test Play Link 2",

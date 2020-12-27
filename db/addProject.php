@@ -11,6 +11,7 @@
     $alias = preg_replace('/[^\w]/', '', $_POST['alias']);
     $short_desc = $_POST['short_desc'];
     $long_desc = $_POST['long_desc'];
+    $is_visible = $_POST['is_visible'] == "Yes" ? 1 : 0;
     $date = $_POST['date'];
     $lnf = $_POST['lnf'];
     $play_link = $_POST['play_link'];
@@ -58,6 +59,7 @@
             `alias`, 
             `short_desc`,
             `long_desc`,
+            `is_visible`,
             `date`,
             `lnf`,
             `play_link`,
@@ -72,6 +74,7 @@
             '$alias',
             '$short_desc',
             '$long_desc',
+            '$is_visible',
             '$date',
             '$lnf',
             '$play_link',
@@ -86,6 +89,7 @@
     if($result_project){
         header("Location: /projects.php");
     } else {
+        echo mysqli_error($con);
         header("Location: /log/helper.php?error=project_add_error");
     }
 ?>

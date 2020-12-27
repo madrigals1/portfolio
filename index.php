@@ -116,7 +116,7 @@
         <?php
           include_once $_SERVER['DOCUMENT_ROOT']."/db/connect.php";
 
-          $result_projects = mysqli_query($con, "SELECT * FROM `projects`");
+          $result_projects = mysqli_query($con, "SELECT * FROM `projects` WHERE `is_visible` = 1");
           $projects = $result_projects->fetch_all(MYSQLI_BOTH);
 
           for($i = 0; $i < count($projects); $i++){
