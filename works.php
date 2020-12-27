@@ -71,7 +71,7 @@
                     </tfoot>
                     <tbody>
                         <?php
-                            $result_works = mysqli_query($con, "SELECT * FROM `works` ORDER BY `works`.`queue` ASC");
+                            $result_works = mysqli_query($con, "SELECT * FROM `works`");
                             $works = mysqli_fetch_all($result_works, MYSQLI_BOTH);
                             $num_rows = $result_works->num_rows;
     

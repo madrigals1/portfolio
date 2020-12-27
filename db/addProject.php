@@ -9,6 +9,7 @@
 
     $name = $_POST['name'];
     $alias = preg_replace('/[^\w]/', '', $_POST['alias']);
+    $queue = $_POST['queue'];
     $short_desc = $_POST['short_desc'];
     $long_desc = $_POST['long_desc'];
     $is_visible = $_POST['is_visible'] == "Yes" ? 1 : 0;
@@ -56,7 +57,8 @@
         INSERT into `projects` 
         (
             `name`,
-            `alias`, 
+            `alias`,
+            `queue`,
             `short_desc`,
             `long_desc`,
             `is_visible`,
@@ -72,6 +74,7 @@
         (
             '$name',
             '$alias',
+            '$queue',
             '$short_desc',
             '$long_desc',
             '$is_visible',

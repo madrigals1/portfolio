@@ -17,6 +17,10 @@
                         "type": "varchar(128)",
                         "null": false
                     },
+                    "queue": {
+                        "type": "int(3)",
+                        "null": false
+                    },
                     "short_desc": {
                         "type": "text",
                         "null": false
@@ -151,6 +155,7 @@
                     "id": 1,
                     "name": "Testing Project",
                     "alias": "TestingAlias",
+                    "queue": 1,
                     "short_desc": "Testing short_desc",
                     "long_desc": "Testing long_desc",
                     "is_visible": 1,
@@ -169,6 +174,7 @@
                     "id": 2,
                     "name": "Testing Project 2",
                     "alias": "TestingAlias2",
+                    "queue": 2,
                     "short_desc": "Testing short_desc 2",
                     "long_desc": "Testing long_desc 2",
                     "is_visible": 1,

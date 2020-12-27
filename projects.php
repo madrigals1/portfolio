@@ -59,12 +59,14 @@
                       <tr>
                         <th>Name</th>
                         <th>Short description</th>
+                        <th>Queue</th>
                       </tr>
                     </thead>
                     <tfoot>
                       <tr>
                         <th>Name</th>
                         <th>Short description</th>
+                        <th>Queue</th>
                       </tr>
                     </tfoot>
                     <tbody>
@@ -78,6 +80,7 @@
                                 echo '<tr style="cursor: pointer;" onclick="goProject('.$project['id'].')">';
                                 echo '<td>'.$project['name'].'</td>';
                                 echo '<td>'.$project['short_desc'].'</td>';
+                                echo '<td>'.$project['queue'].'</td>';
                                 echo '</tr>';
                             }
                         ?>
@@ -110,6 +113,10 @@
                <div class="form-group">
                  <label for="alias">Alias</label>
                  <input type="text" class="form-control" id="alias" name="alias"/>
+               </div>
+               <div class="form-group">
+                 <label for="queue">Queue</label>
+                 <input type="number" class="form-control" id="queue" name="queue"/>
                </div>
                <div class="form-group">
                  <label for="short_desc">Short description</label>

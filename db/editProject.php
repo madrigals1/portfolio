@@ -8,6 +8,7 @@
     $id = $_GET['id'];
     $name = $_POST['name'];
     $alias = preg_replace('/[^\w]/', '', $_POST['alias']);
+    $queue = $_POST['queue'];
     $short_desc = $_POST['short_desc'];
     $is_visible = $_POST['is_visible'] == "Yes" ? 1 : 0;
     $date = $_POST['date'];
@@ -20,6 +21,7 @@
         UPDATE `projects` SET
             `name` = '$name',
             `alias` = '$alias',
+            `queue` = '$queue',
             `short_desc` = '$short_desc',
             `is_visible` = '$is_visible',
             `date` = '$date',

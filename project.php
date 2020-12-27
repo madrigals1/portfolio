@@ -100,6 +100,14 @@
 								</div>
 
 								<div class="profile-info-row">
+									<div class="profile-info-name"> Queue </div>
+
+									<div class="profile-info-value">
+										<span>'.$project['queue'].'</span>
+									</div>
+								</div>
+
+								<div class="profile-info-row">
 									<div class="profile-info-name"> Date </div>
 
 									<div class="profile-info-value">
@@ -200,6 +208,11 @@
 									  <div class="form-group">
 									  	<label for="alias">Alias</label>
 									  	<input type="text" class="form-control" id="alias" name="alias" value="'.$project['alias'].'">
+									  </div>
+
+									  <div class="form-group">
+									  	<label for="queue">Queue</label>
+									  	<input type="number" class="form-control" id="queue" name="queue" value="'.$project['queue'].'">
 									  </div>
 
 								  	  <div class="form-group">
