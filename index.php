@@ -129,7 +129,7 @@
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img class="img-fluid" src="', $project['small_pic'], '" alt="', $project['name'], '">
+                <img class="img-fluid" src="', $project['small_pic'], '" alt="', $project['name'], '" style="width: 350px; height: 262.5px;">
               </a>
               <div class="portfolio-caption">
                 <h4>', $project['name'], '</h4>
