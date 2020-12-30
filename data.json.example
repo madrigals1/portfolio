@@ -251,12 +251,12 @@
             },
             {
                 "name": "gmail",
-                "link": "mailto:sabyrbayev.adi32@gmail.com",
+                "link": "mailto:user@example.com",
                 "fa_classes": "fab fa-google"
             },
             {
                 "name": "telegram",
-                "link": "https://t.me/madrigals1",
+                "link": "https://t.me/example",
                 "fa_classes": "fab fa-telegram"
             }
         ]
