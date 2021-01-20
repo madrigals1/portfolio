@@ -230,12 +230,8 @@
                 "link": "#portfolio"
             },
             {
-                "name": "ABOUT",
-                "link": "#about"
-            },
-            {
-                "name": "CONTACT",
-                "link": "#contact"
+                "name": "EXPERIENCE",
+                "link": "#experience"
             }
         ],
         "social_buttons": [
