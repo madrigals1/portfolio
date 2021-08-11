@@ -157,7 +157,7 @@
         <div class="col-lg-12">
           <ul class="timeline">
             <?php
-              $result_works = mysqli_query($con, "SELECT * FROM `works` ORDER BY `queue`");
+              $result_works = mysqli_query($con, "SELECT * FROM `works` ORDER BY `queue` DESC");
               $works = $result_works->fetch_all(MYSQLI_BOTH);
               
               for($i = 0; $i < count($works); $i++){
