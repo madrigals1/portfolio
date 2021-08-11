@@ -185,13 +185,6 @@
                 ';
               }
             ?>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>And my
-                  <br>Journey is
-                  <br>Still Going!</h4>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
