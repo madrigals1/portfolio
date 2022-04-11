@@ -15,7 +15,7 @@
     $project = $result_project->fetch_array(MYSQLI_BOTH);  
     $title = $project['name'];
 	include_once $_SERVER['DOCUMENT_ROOT']."/components/head.php";
-	echo '<link rel="stylesheet" href="https://static.adigame.dev/portfolio/vendor/css/profile.css">';
+	echo '<link rel="stylesheet" href="https://static.madrigal.pro/portfolio/vendor/css/profile.css">';
 ?>
 
 <body id="page-top">

@@ -19,10 +19,10 @@
   ?>
 
   <!-- Bootstrap core CSS -->
-  <link href="https://static.adigame.dev/portfolio/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://static.madrigal.pro/portfolio/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="https://static.adigame.dev/portfolio/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://static.madrigal.pro/portfolio/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
@@ -30,7 +30,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="https://static.adigame.dev/portfolio/vendor/css/agency.min.css" rel="stylesheet">
+  <link href="https://static.madrigal.pro/portfolio/vendor/css/agency.min.css" rel="stylesheet">
 
 </head>
 
@@ -349,18 +349,18 @@
    ?>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="https://static.adigame.dev/portfolio/vendor/jquery/jquery.min.js"></script>
-  <script src="https://static.adigame.dev/portfolio/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://static.madrigal.pro/portfolio/vendor/jquery/jquery.min.js"></script>
+  <script src="https://static.madrigal.pro/portfolio/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="https://static.adigame.dev/portfolio/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="https://static.madrigal.pro/portfolio/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Contact form JavaScript -->
-  <script src="https://static.adigame.dev/portfolio/vendor/js/jqBootstrapValidation.js"></script>
-  <script src="https://static.adigame.dev/portfolio/vendor/js/contact_me.js"></script>
+  <script src="https://static.madrigal.pro/portfolio/vendor/js/jqBootstrapValidation.js"></script>
+  <script src="https://static.madrigal.pro/portfolio/vendor/js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="https://static.adigame.dev/portfolio/vendor/js/agency.min.js"></script>
+  <script src="https://static.madrigal.pro/portfolio/vendor/js/agency.min.js"></script>
 
 </body>
 
